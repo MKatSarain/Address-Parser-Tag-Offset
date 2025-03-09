@@ -4,7 +4,7 @@
 // getOffset function dependent on an unsigned int address
 unsigned int getOffset(unsigned int address) {
 	// int mask will isolate the least significant byte (LSB) of the address
-	unsigned int mask = 0x0000000F;
+	unsigned int mask = 0xF;
 	// The int offset ANDs the address and mask to isolate LSB
 	unsigned int offset = address & mask;
 	return offset;
